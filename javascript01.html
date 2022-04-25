@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+</head>
+<body id="corpo">
+    <h1>Modificando conteúdo de HTML</h1>
+    <p id="teste01">Olá Mundo!</p>
+
+    <script>
+        document.getElementById("teste01").innerHTML="Olá Javascript!";
+    </script>
+
+    <h2> Modificando através de eventos</h2>
+
+    <p id="teste02">Olá Mundo!</p>
+    <button onclick="document.getElementById('teste02').innerHTML='Olá Javascript!';">Clique aqui</button>
+    <button onclick="document.getElementById('teste02').innerHTML='Olá Mundo!';">Clique aqui</button>
+
+    <h1> Modificando atributo</h1>
+
+    <img id="teste03" src="midias/off.gif">
+    <button onclick="document.getElementById('teste03').src='midias/on.gif';">Ligar</button>
+    <button onclick="document.getElementById('teste03').src='midias/off.gif';">Ligar</button>
+
+    <h1>Modificando Estilo</h1>
+
+    <p id="teste04" style="color:red;">Olá Mundo!</p>
+    <button onclick="document.getElementById('teste04').style.color = 'blue';">Azul</button>
+
+    <br>
+    <p id="teste05" style="display:none;">Aviso Importante</p>
+    <button onclick="document.getElementById('teste05').style.display = 'block';">Clique aqui</button>
+
+    <h2>Tema escuro</h2>
+    <button onclick="document.getElementById('corpo').style.backgroundColor='#333333';document.getElementById('corpo').style.color='#cccccc';">Tema Escuro</button>
+
+</body>
+</html>

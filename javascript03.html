@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+</head>
+<body>
+    <h1>Mensagens no JavaScript</h1>
+    <h2>Mensagem via HTML</h2>
+
+    <p id="teste01"></p>
+
+    <script>
+        document.getElementById("teste01").innerHTML = "Mensagem via HTML";
+    </script>
+
+    <h2>Mensagem via Pop up</h2>
+
+    <script>
+        //window.alert("Mensagem via Pop up");
+    </script>
+
+    <h2>Mensagem via console</h2>
+
+    <script>
+        console.log("Mensagem via console");
+    </script>
+
+    <h2>Mensagem via escrita direta</h2>
+
+    <script>
+        document.write("Mensagem via escrita direta");
+    </script>
+
+    <h1>Variáveis</h1>
+
+    <script>
+        let texto; //declara uma variável
+        texto = "Olá Mundo!"; // atribui valor a variável
+        console.log(texto);
+
+        let num = 3; // declara E atribui
+        console.log(num);
+        num = 5;
+        console.log(num);
+
+        const pi = 3.1415; // declara constante
+        console.log(pi);
+        // pi = 3; // dá erro!
+
+        console.log(num + pi);
+        console.log(texto + num);
+
+        console.log(typeof texto);
+        console.log(typeof num);
+
+        console.log("O valor da variável num é: " + num + ". E o seu tipo é: " + typeof num);
+
+    </script>
+
+    <h1>Operadores aritméticos</h1>
+
+    <script>
+        let num1 = 5;
+        let num2 = 2; 
+
+        let resultado = num1 + num2;
+        console.log(resultado);
+
+        resultado = num1 - num2;
+        console.log(resultado);
+
+        resultado = num1 * num2;
+        console.log(resultado);
+
+        resultado = num1 / num2;
+        console.log(resultado);
+
+        resultado = num1 ** num2;
+        console.log(resultado);
+
+
+    </script>
+</body>
+</html>

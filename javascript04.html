@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e Operadores</title>
+</head>
+<body>
+    <h1>Operadores</h1>
+
+    <input id="numero1"> 
+    <br> 
+    <button onclick="resultado('+');">+</button>
+    <button onclick="resultado('-');">-</button>
+    <button onclick="resultado('*');">*</button>
+    <button onclick="resultado('/');">/</button>
+    <button onclick="resolver();">=</button>
+
+    <script>
+        function resultado(sinal){
+            let num1 = document.getElementById("numero1").value;
+            let resultado = num1 + sinal;
+            document.getElementById("numero1").value = resultado;
+        }
+
+        function resolver(){
+            let num1 = eval(document.getElementById("numero1").value);
+            document.getElementById("numero1").value = num1;
+        }
+
+    </script>
+    
+</body>
+</html>

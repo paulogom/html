@@ -1,0 +1,142 @@
+/* Importar fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Importando arquivo de fonte */
+@font-face {
+    font-family: Jester;
+    src: url(fonts/Jester.ttf);
+}
+
+/*Formatações de texto */
+/* https://www.w3schools.com/css/css_text.asp */
+/* https://www.w3schools.com/css/css_font.asp */
+
+body{
+    font-family: 'Roboto', sans-serif; 
+   
+}
+
+h1{
+    color:red; /* Cor da fonte */
+    background-color: gold; /* Cor do fundo */
+    font-family:Jester, sans-serif; /* Desenho da fonte */
+    font-weight: normal; /* Negrito */
+    font-style:italic; /* Itálico */
+    font-size: 50px; /* Tamanho da fonte */
+    text-decoration: underline;
+   }
+
+p{
+    line-height: 1.2em; /* Entrelinha */
+    text-indent: 2em; /* Recuo de primeira linha */
+    text-align: justify;
+}
+
+/* Formatações de links */
+
+a:link{
+    color:coral;
+    text-decoration: none; /* Sublinhado */
+    cursor:help; /* Muda o cursor sobre o elemento */
+}
+
+a:visited{
+    color:darkgreen;
+}
+
+a:hover{
+    color:brown;
+    background-color: black;
+}
+
+a:active{
+    color:red;
+}
+
+/* Estilos de lista */
+
+ul#frutas{ list-style-type: circle;
+    background-color: cornflowerblue;
+    /* list-style-type: '😎';*/
+    list-style-image: url(midias/batman.png);
+    list-style-position: inside;
+}
+
+ul li{
+    background-color: cadetblue;
+}
+
+ol{
+    list-style-type:hiragana;
+}
+
+.destaque{
+    background-color: darkgoldenrod;
+}
+
+dl{
+    background-color: cadetblue;
+}
+dt{
+    background-color:beige;
+}
+dd{
+    background-color:coral;
+}
+
+/* Estilos de Tabela */
+/* https://www.w3schools.com/css/css_table.asp */
+
+td, th{
+    /*
+    border-style: solid;
+    border-width: 2px;
+    border-color:darkgreen;
+    */
+
+    /* forma resumida */
+    border-right: solid 2px darkgreen;
+ }
+
+ table{
+     border-collapse: collapse;
+     background-color: aquamarine;
+     border: solid 4px darkgreen;
+     width:700px;
+     height: 400px;
+     text-align: center;
+     border-radius: 10px;
+     margin: auto;
+ }
+
+ th{
+    background-color: coral;
+ }
+
+ tr:hover{
+     background-color: blueviolet;
+ }
+
+ h2{
+     border-style: solid;
+     border-color: blue;
+     border-width: 2px; /* todas */
+     border-radius: 10px;
+
+     /*border-width:2px 0; /* top/bottom left/right */    
+     /*border-width: 2px 6px 12px; /* top left/right bottom  */
+     /*border-width: 2px 6px 12px 24px; /* top right bottom left (sentido horário) */
+
+     text-align:center;
+     margin: 50px; /* espaço da borda para fora */
+     padding: 50px; /* espaço da borda para dentro */
+     
+    
+ }
+
+
+
+
+
+
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" type="image/x-icon" href="midias/favicon.ico">
+
+    <style>
+        body{
+            margin:0;
+            background-image: url("midias/entradacinema.jpg");
+            background-attachment: fixed;
+
+
+        }
+
+        #container{
+            display:grid;
+            grid-template-columns: 70% auto;
+            width:90%;
+            margin:auto;
+            background-color:rgb(36, 36, 36);
+        }
+        
+        header a:hover header span{
+            background-color: rgb(136, 3, 3);
+            grid-column: 1/3;
+            padding: 10px;
+        }
+        nav{
+            background-color: black;
+            grid-column: 1/3;
+        }
+        main{
+            background-color: darkgray;
+            /*height: 600px;*/
+            /*overflow:auto;*/
+            padding:10px;
+        }
+        aside{ 
+            
+       }
+        footer{
+            background-color: black;
+            height: 100px;
+            grid-column: 1/3;
+        }
+        nav a, nav span{
+            display:inline-block;
+            padding:10px; 
+            color:white;
+            text-decoration: none;
+        }
+
+        nav a:hover, nav span:hover{
+            background-color:brown;
+        }
+
+        img.imagem1{
+            width: 200px;
+            /*margin:auto;
+            display:block;*/
+            float:left;
+            margin-right:10px;
+        }
+
+        aside iframe{
+            width: 90%;
+            margin:auto;
+            display:block;
+        }
+
+        header{
+            display:grid;
+            grid-template-columns: 20% auto 20%;
+        }
+
+        header button{
+            margin-left: 200px;
+        }
+
+        header h1{
+            text-align: center;
+        }
+
+        .dropdown{
+            position:relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            position: absolute;
+            background-color: white; 
+            display:none; 
+            box-shadow: 5px 5px 5px rgba(30, 30, 30, 0.5);                  
+        }
+        .dropdown-content a{
+            color:black;
+            width:100px;   
+                               
+        }
+        .dropdown-content a:hover{
+            color:white;
+        }
+        .dropdown:hover .dropdown-content{
+            display:block;
+        }
+
+        nav span{
+            display:inline-block;
+        }
+        
+        .login {
+            margin:auto;
+            
+        }
+
+          
+</style>
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="dropdown">
+                <span>Link 5</span>
+                <div class="dropdown-content">
+                    <a href="">Link 5.1</a>
+                    <a href="">Link 5.2</a>
+                    <a href="">Link 5.3</a> 
+                </div>
+            </div>
+            <h1>Título do Site</h1>
+            <div class="login">
+                <button>Login</button>
+            </div>
+        </header>
+
+        <nav>
+            <a href="">Link 1</a>
+            <div class="dropdown">
+                <span>Link 5</span>
+                <div class="dropdown-content">
+                    <a href="">Link 5.1</a>
+                    <a href="">Link 5.2</a>
+                    <a href="">Link 5.3</a> 
+                </div>
+            </div>           
+        </nav>
+        <main>
+
+            <img src="midias/tim.jpg" alt="Foto do Tim Berners Lee" class="imagem1">
+
+            <!-- " p*15>lorem "  Comando do VSCode para fazer 15 parágrafod com texto falso -->
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel veniam quas perferendis molestias voluptatum distinctio impedit iste autem. Iste minus ipsa veritatis quidem doloribus molestiae, consequuntur corrupti commodi obcaecati minima.</p>
+            <p>Necessitatibus nesciunt quod ipsa qui ad. Commodi harum eveniet saepe velit reprehenderit, amet repellendus quae debitis dolor sunt quasi libero, aspernatur eos veniam minus eius quidem molestias nostrum, quia et!</p>
+            <p>Rerum facilis iure eligendi quae impedit facere temporibus distinctio nam dignissimos voluptatum placeat architecto fuga eos, dicta provident error. Ipsam aut cupiditate provident quas iste veritatis alias consectetur quaerat ullam?</p>
+            <p>Sed incidunt ex, tempora inventore delectus pariatur ipsa natus sapiente aliquid consequuntur ipsam quasi quas nemo facilis, illum maxime molestias saepe, soluta ab adipisci et voluptate non! Necessitatibus, quod obcaecati!</p>
+            <p>Quaerat, <a href="">rwerwer</a>enim? Voluptatum sed ab dolorem amet ex a exercitationem mollitia esse ullam impedit excepturi architecto, debitis, animi unde laborum atque deserunt obcaecati tenetur, voluptatibus maxime quidem illum iure quaerat?</p>
+            <p>Incidunt dolore praesentium animi iste, quis similique odio atque laborum commodi, assumenda alias repellat corrupti! Alias officiis magni magnam repellat hic ducimus, temporibus amet, ratione cupiditate, consequuntur deleniti eos et.</p>
+            <p>Possimus quidem maxime magni perspiciatis quae labore ad sint quibusdam id illo? Sequi amet molestias alias laborum autem, eveniet, repellat quis sunt facilis excepturi neque quia odio, temporibus fuga delectus.</p>
+            <p>Id, voluptates esse ratione officia, ad eaque laboriosam maxime, veritatis sapiente sit blanditiis minima obcaecati. Incidunt, quisquam perspiciatis. Optio at autem laboriosam est vel repellat eligendi sequi dicta rerum fuga.</p>
+            <p>Voluptas labore omnis quasi. Nostrum, porro, assumenda nisi itaque, non rerum vero aliquid soluta quidem quibusdam voluptas. Fugit, est, mollitia odio ipsa totam blanditiis corporis hic ut debitis natus unde?</p>
+            <p>Omnis dolorum laboriosam in incidunt error reprehenderit. Provident ipsum tempore ducimus nemo, exercitationem saepe perferendis, sint non impedit laborum maiores suscipit? Veniam dolorem libero quibusdam culpa tempora commodi ea cum.</p>
+            <p>Deleniti quasi debitis esse. Consectetur distinctio aliquid delectus? Amet voluptatum voluptates natus perspiciatis placeat, velit, fuga molestias ipsum quibusdam officiis voluptatem, eligendi blanditiis assumenda quia quod vitae a incidunt. Quibusdam!</p>
+            <p>Minus minima natus alias quis aut, voluptas nisi, inventore assumenda animi reiciendis similique. Laboriosam hic laudantium expedita architecto blanditiis, sunt fuga esse sint facere. Maiores quaerat explicabo alias quae incidunt?</p>
+            <p>Deserunt iure nihil deleniti officia consequatur reprehenderit voluptates ab? Perferendis reiciendis est ad quos labore porro pariatur voluptatum, eum consequuntur perspiciatis fuga tempora accusantium in ratione similique nihil, totam alias!</p>
+            <p>Tempora vero, nobis nihil facilis fuga, ullam fugit possimus veritatis dolorum optio sunt, libero eaque nesciunt ea praesentium! Modi quisquam nam amet sed nulla assumenda ea impedit saepe facilis vel.</p>
+            <p>Dolorum officiis necessitatibus ipsa dignissimos deleniti aspernatur voluptate vero repellendus corrupti! Temporibus, sunt facilis iusto libero iste beatae in repellat aliquid adipisci deserunt similique? Sint alias aut obcaecati unde doloremque!</p>
+
+
+        </main>
+        <aside>
+            <h2>Trailer</h2>
+            <iframe src="https://www.youtube.com/embed/idU-bx2x1a8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </aside>
+        <footer>Footer</footer>
+    </div>
+    
+</body>
+</html>
